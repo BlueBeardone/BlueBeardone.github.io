@@ -1,0 +1,273 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 3fr; /* Two columns: 1 fraction for the sidebar and 3 fractions for main content */
+  grid-template-rows: auto 1fr auto; /* Three rows: automatic height for header and footer, 1 fraction for main content */
+  grid-template-areas:
+    "header header"
+    "sidebar main-content"
+    "footer footer";
+  gap: 10px; /* Gap between grid items */
+  height: 100vh;
+}
+
+.header {
+  grid-area: header; /* Place the element in the 'header' grid area */
+  background-color: lightgray;
+  padding: 10px;
+  text-align: center ;
+}
+
+.sidebar {
+  grid-area: sidebar; /* Place the element in the 'sidebar' grid area */
+  padding: 10px;
+}
+
+.main-content {
+  grid-area: main-content; /* Place the element in the 'main-content' grid area */
+  padding: 10px;
+}
+
+.footer {
+  grid-area: footer; /* Place the element in the 'footer' grid area */
+  background-color: lightcoral;
+  padding: 10px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+}
+
+.navbar {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  justify-content: center;
+}
+
+.nav-list {
+  list-style: none;
+  display: contents;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  margin: 0 15px;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-item a:hover {
+  color: lightgray;
+}
+
+.main-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+.grid-section {
+  padding: 20px;
+  border-radius: 5px;
+  display: none; /* Initially hide all sections */
+  overflow-y: visible;
+}
+
+/* Show the selected section based on URL hash */
+:target.grid-section {
+  display: block;
+}
+
+table {
+  border-collapse: collapse;
+  width: 80%;
+  max-width: 800px;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #f0f0f0;
+  font-weight: bold;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+ol {
+  counter-reset: section;
+}
+
+#Overview{
+  border-style: groove;
+  border-radius: 15px;
+  border-color: black;
+}
+
+#History{
+  border-style: dashed;
+  border-color: grey;
+  border-radius: 20px;
+}
+
+#Difference{
+  border-style: double;
+  border-color: burlywood;
+  border-radius: 15px;
+}
+
+#Evolution{
+  border-style: groove;
+  border-color: azure;
+  border-radius: 10px;
+}
+
+#InternetProtocols{
+  border-style: dashed;
+  border-color: blanchedalmond;
+  border-radius: 20px;
+}
+
+#WebApplicationArchitecture{
+  border-style: double;
+  border-color: chocolate;
+  border-radius: 15px;
+}
+
+#Client-sideandserver-sideengineering{
+  border-style: groove;
+  border-color: darkred;
+  border-radius: 20px;
+}
+
+#BackgroundBarend
+{
+    background-color: aqua;
+}
+
+#BackgroundZac
+{
+    background-color: darkgray;
+}
+
+.grid-container
+{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: 
+    "Header"
+    "Photo Body"
+    "Footer";
+    gap: 20px;
+    height: 100vh;
+}
+
+.Photo
+{
+    grid-area: Photo;
+    border-style: inset;
+    border-color: Black;
+    position: absolute;
+    top: 10%;
+    right: 55%;
+    width: 40%;
+    float:left;
+    background-color: whitesmoke;
+    height: 107.8%;
+}
+
+.BodyBarend
+{
+    grid-area: Body;
+    border-style: inset;
+    border-color: Blue;
+    border-radius: 3%;
+    border: 6%;
+    text-align: center;
+    width: 50%;
+    position: absolute;
+    top: 10%;
+    right: 2%;
+    background-color: whitesmoke;
+}
+
+.BodyZac
+{
+    grid-area: Body;
+    border-style: dashed;
+    border-color: crimson;
+    border-radius: 3%;
+    border: 30%;
+    text-align: center;
+    color: azure;
+    width: 50%;
+    position: absolute;
+    top: 10%;
+    right: 2%;
+    background-color: darkred;
+}
+
+#Title
+{
+    text-decoration: underline;
+    font-size: 70px;
+}
+
+#Num
+{
+    font-style: italic;
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+#Link
+{
+    text-align: right;
+    color: blue;
+    font-size: 20px;
+}
+
+#LinkZac
+{
+    text-align: right;
+    color: aqua;
+    font-size: 20px;
+}
+
+#Biography
+{
+    padding: 2%;
+    font-size: 35px;
+}
+
+#Back
+{
+    border-style: solid;
+    border: 5%;
+    position: absolute;
+    top: 0%;
+    right: 93%;
+    text-decoration: underline;
+    font-size: 20px;
+    background-color: red;
+    
+}
+
